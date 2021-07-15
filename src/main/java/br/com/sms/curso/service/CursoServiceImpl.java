@@ -1,4 +1,4 @@
-package br.com.sms.curso.CursoService;
+package br.com.sms.curso.service;
 
 import br.com.sms.curso.dao.CursoDao;
 import br.com.sms.curso.domain.Curso;

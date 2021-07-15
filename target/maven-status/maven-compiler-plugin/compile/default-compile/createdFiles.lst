@@ -1,0 +1,10 @@
+br\com\sms\curso\service\CursoService.class
+br\com\sms\curso\config\SpringRootConfig.class
+br\com\sms\curso\config\SpringInitConfig.class
+br\com\sms\curso\config\SpringJpaConfig.class
+br\com\sms\curso\domain\CargaHoraria.class
+br\com\sms\curso\resource\rest\CursoRestController.class
+br\com\sms\curso\dao\CursoDao.class
+br\com\sms\curso\domain\Curso.class
+br\com\sms\curso\service\CursoServiceImpl.class
+br\com\sms\curso\dao\CursoDaoImpl.class
