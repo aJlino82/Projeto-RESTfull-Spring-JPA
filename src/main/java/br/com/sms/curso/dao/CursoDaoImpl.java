@@ -2,7 +2,7 @@ package br.com.sms.curso.dao;
 
 
 import br.com.sms.curso.domain.Curso;
-import br.com.sms.curso.exception.NaoExisteDaoException;
+//import br.com.sms.curso.exception.NaoExisteDaoException;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -30,20 +30,12 @@ public class CursoDaoImpl implements CursoDao {
 
     @Override
     public void delete(Long id) {
-        try {
-            entityManager.remove(entityManager.getReference(Curso.class, id));
-        } catch (EntityNotFoundException ex) {
-            throw new NaoExisteDaoException("Curso não encontrado para id = " + id + ".");
-        }
+        entityManager.remove(entityManager.getReference(Curso.class, id));
     }
 
     @Override
     public Curso findById(Long id) {
-        Curso curso = entityManager.find(Curso.class, id);
-        if (curso == null) {
-            throw new NaoExisteDaoException("Curso não encontrado para id = " + id + ".");
-        }
-        return curso;
+        return entityManager.find(Curso.class, id);
     }
 
     @Override
